@@ -1,0 +1,34 @@
+{
+  "name": "use-synced-storage",
+  "version": "0.0.0",
+  "description": "storage state hook that syncs across components and tabs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "cd example/cra && npm start",
+    "build": "tsc",
+    "lint": "eslint 'src/**/*.ts'",
+    "test": "npm run build && node install-example-if-needed && cd example/cra && npm test -- --watchAll=false",
+    "prepublish": "npm run build"
+  },
+  "keywords": [],
+  "author": "Moshe Kolodny",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^17.0.33",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "react": "file:example/cra/node_modules/react",
+    "typescript": "^4.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolodny/use-synced-storage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kolodny/use-synced-storage/issues"
+  },
+  "homepage": "https://github.com/kolodny/use-synced-storage#readme"
+}
